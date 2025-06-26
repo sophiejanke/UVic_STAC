@@ -1,0 +1,74 @@
+<html> 
+<head>
+        <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.17/index.global.min.js'></script>
+    <script>
+
+      document.addEventListener('DOMContentLoaded', function() {
+        var calendarEl = document.getElementById('calendar');
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+          initialView: 'dayGridMonth'
+        });
+        calendar.render();
+      });
+
+    </script>
+<style>
+h2 {width:750px;
+border: 5px outset purple;
+background-color:Pink;
+text-align:center;}
+
+.box_one {
+width:750px;
+border: 5px outset pink;
+  background-color: lightblue;    
+text-align:center;}
+
+.box_two {
+width:750px;
+border: 5px outset red;
+  background-color: orange;    
+text-align:center;}
+
+.box_three {
+width:750px;
+border: 5px outset magenta;
+  background-color: lightgreen;    
+text-align:center;}
+
+</style>
+</head>
+
+<header>
+<h2> 
+<marquee>
+SUSTAINABLE TRANSPORTATION ADVOCACY CLUB [STAC].
+</marquee>
+</h2>
+
+</header>
+
+<body>
+<div class="box_one">
+<p style="colour:Pink;"> We are a collection of students at the University of Victoria from a variety of programs who are united around our interest in sustainable transportation projects for our community.</p>
+</div> 
+
+<div class="box_two">
+<h3>
+goals
+</h3>
+<p style="colour:Pink;">1.To encourage student representation in the conversation around progressive transportation projects.<br>2.Raise awareness and support for sustainable transportation projects around the CRD.<br>3.Take action to make our communities better for all road users. .</p>
+</div> 
+
+<div class="box_three">
+<nav>
+<h3> 
+navigation
+</h3>
+<li><a href="pages/projects.html">projects</a></li>
+<div id='calendar'></div>
+
+</nav>
+</div>
+</body>
+</html>
